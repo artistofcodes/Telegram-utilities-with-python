@@ -1,6 +1,6 @@
 # Chat ID fetcher
 
-A simple pythin script to fetch the **Chat ID** of a telegram Group or user.
+A simple python script to fetch the **Chat ID** of a telegram Group or user.
 
 ## HOW IT WORKS
 
