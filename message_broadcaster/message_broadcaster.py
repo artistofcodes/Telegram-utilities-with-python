@@ -14,6 +14,6 @@ def send_message(chat_id, text):
     payload = {"chat_id": chat_id, "text": text}
     requests.post(url, data=payload)
 
-for chat_id in chat_ids: #sending message
+for chat_id in chat_ids: #sending message for chat ids
     send_message(chat_id, message)
     print(f"Message sent to {chat_id}")
