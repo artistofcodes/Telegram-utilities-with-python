@@ -24,7 +24,7 @@ telegram-utilities-with-python/
 
 ### 1. Chat ID Fetcher
 Fetches the chat ID of a user or group where the bot is added.  
-Helpful when you need the `chat_id` to send messages or automate replies.  
+Helpful when you need the `chat_id` to send messages or automate the replies.  
 
 **Usage:**
 1. Replace your bot token in the code.  
