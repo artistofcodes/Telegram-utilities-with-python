@@ -12,7 +12,7 @@ import zipfile
 # -------------------------
 api_id = 25638378           # Replace with your API ID (int)
 api_hash = "a0b10cca67d3ffdaae1b3b8e6845fbd9"  # Replace with your API Hash (str)
-session_name = "file_downloader_private"  # session file name
+session_name = "file_downloader_private"  # session file name (will be saved in your local with this name)
 
 # -------------------------
 # SETUP LOGGING
