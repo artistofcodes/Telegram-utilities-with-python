@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 
 # -------------------------
 # INITIALIZE TELETHON CLIENT
-# -------------------------
+# -------------------------#
 client = TelegramClient(session_name, api_id, api_hash)
 
 # -------------------------
