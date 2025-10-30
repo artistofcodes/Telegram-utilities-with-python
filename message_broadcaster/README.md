@@ -28,7 +28,7 @@ pip install requests
 
 1. Replace `YOUR_BOT_TOKEN_HERE` with your actual bot token.  
 2. Add your user or group chat IDs to the `chat_ids` list.  
-3. Customize your message text.  
+3. Customize your message text...
 4. Run the script:  
 
 ```bash
