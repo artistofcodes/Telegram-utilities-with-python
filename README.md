@@ -1,100 +1,153 @@
-# Utilities with Python  
+# Telegram-utilities-with-python
 
-A collection of Python scripts for automating Telegram and other everyday tasks using powerful libraries like **Telethon** and **PyDrive2**.  
-Each utility is self-contained and includes a setup guide for easy use.
+A growing collection of practical Telegram automation utilities built using Python.  
+Includes bot helpers, automation scripts, chat exporting, media downloading, message broadcasting, and more.
 
----
-
-## 📚 Table of Contents
-1. [Overview](#-utilities-with-python)
-2. [Telethon File Downloader (Private Chat Flow)](#1-telethon-file-downloader-private-chat-flow)
-3. [Telegram → Google Drive Chat Backup](#2-telegram--google-drive-chat-backup)
-4. [Coming Soon](#-coming-soon)
-5. [License](#license)
+> Updated regularly with fresh ideas and daily utilities!
 
 ---
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Telethon](https://img.shields.io/badge/Telethon-latest-orange)
-![PyDrive2](https://img.shields.io/badge/PyDrive2-enabled-yellow)
+## ⭐ Features
+
+- Multiple Telegram automation utilities in one repo
+- Supports **Telethon** and **python-telegram-bot**
+- Easy to set up and run
+- Well-structured utilities with clear purpose
+- Beginner-friendly scripts for Telegram developers
+- MIT Licensed — free to use and contribute
 
 ---
 
-## 1. Telethon File Downloader (Private Chat Flow)  
-A Telethon script that runs as a user client and interacts with you via **private messages** to download media from any chat.
+## 🛠️ Requirements
 
-**Features:**  
-- Works through private chat commands (`/start`)  
-- Specify target chat (username or ID)  
-- Supports date range filtering (`YYYY-MM-DD`)  
-- File type filters (`photo`, `video`, `document`, `audio`, `voice`, `all`)  
-- Optional sender username filter  
-- Creates a ZIP of downloaded files and sends it back to you  
-- Fully interactive chat flow  
-
-**Setup:**  
-1. Create a Telegram app at [https://my.telegram.org](https://my.telegram.org)  
-2. Note your `api_id` and `api_hash`  
-3. Install dependencies:
-   ```bash
-   pip install telethon
-   ```
-   If VS Code shows  
-   `Import "telethon.errors" could not be resolved`,  
-   install the library and select the right Python interpreter (`Ctrl + Shift + P → Python: Select Interpreter`).  
-4. Run the script:
-   ```bash
-   python file_downloader.py
-   ```
-5. Sign in once with your phone number — a `.session` file will be created automatically.
-
-**Limitations:**  
-- Works only for user accounts (not bots)  
-- Requires you to be a member of the target chat  
-- Avoid downloading private content without consent  
+- Python **3.8+**
+- Telegram API credentials  
+  (API ID & API Hash from https://my.telegram.org/auth)
 
 ---
 
-## 2. Telegram → Google Drive Chat Backup  
-A script that connects your Telegram account and automatically backs up chat media to **Google Drive**.
+## 📦 Installation
 
-**Features:**  
-- Backs up files from Telegram chats directly to Google Drive  
-- Works with your user account (not bot)  
-- Creates a Drive folder named after the chat  
-- Uses `Telethon` + `PyDrive2`  
-- Resumable uploads and date-based filtering  
-
-**Setup:**  
-1. Create a Telegram app at [https://my.telegram.org](https://my.telegram.org)  
-   → get `api_id` and `api_hash`  
-2. Create a **Google Cloud Project** and enable the **Drive API**  
-3. Download `client_secrets.json` and place it in the script directory  
-4. Install dependencies:
-   ```bash
-   pip install telethon pydrive2
-   ```
-5. Run the script:
-   ```bash
-   python tg_drive_backup.py
-   ```
-6. On the first run, it will open a browser for Google Drive authorization.  
-   Once completed, your Telegram chat media will upload automatically.
-
-**Optional Extensions:**  
-- Scheduled daily backups  
-- Folder-wise Drive organization  
-- Automatic compression before upload  
+```bash
+git clone https://github.com/artistofcodes/Telegram-utilities-with-python.git
+cd Telegram-utilities-with-python
+pip install -r requirements.txt
+```
 
 ---
 
-## 🧩 Coming Soon  
-- Telegram channel analytics  
-- Auto-forwarder with filters  
-- Scheduled message sender  
+## ⚙️ Libraries Used
+
+| Library | Purpose |
+|--------|---------|
+| Telethon | User account automation & chat utilities |
+| python-telegram-bot | Bot automation utilities |
+
+### Install Telethon
+```bash
+pip install telethon
+```
+
+### Install python-telegram-bot
+```bash
+pip install python-telegram-bot
+```
 
 ---
 
-## License  
-MIT License © 2025  
+## 📁 Repo Structure (Example Layout)
+
+```
+Telegram-utilities-with-python/
+ ├─ telethon/
+ │   ├─ chat_id_fetcher.py
+ │   ├─ message_auto_reply.py
+ │   └─ ...
+ ├─ bot/
+ │   ├─ simple_reply_bot.py
+ │   ├─ file_forwarder_bot.py
+ │   └─ ...
+ ├─ utils/
+ │   └─ helper_functions.py
+ ├─ README.md
+ └─ requirements.txt
+```
+
+---
+
+## ✅ Utilities List
+
+| Sl.No | Script | Type | Description |
+|------|--------|------|-------------|
+| 1 | chat_id_fetcher.py | Telethon | Fetch chat ID for user/group/channel |
+| 2 | file_downloader.py | Telethon | Download media/files from any chat |
+| 3 | broadcast_message.py | python-telegram-bot | Broadcast message to pre-defined users |
+| 4 | auto_forward_bot.py (coming soon) | Bot | Forward messages between chats |
+| 5 | google_drive_uploader.py (coming soon) | Telethon | Auto-upload media to Google Drive |
+| 6 | spam_control_bot.py (coming soon) | Bot | Prevent spam in groups with rules |
+
+> More utilities are added frequently — stay tuned!
+
+---
+
+## ▶️ Usage
+
+Each script contains setup instructions in comments.  
+Example:
+
+```bash
+python telethon/chat_id_fetcher.py
+```
+
+Add your:
+- API ID
+- API Hash
+- Bot Token (for bot utilities)
+- Target chat details
+
+---
+
+## 🚀 Roadmap
+
+- Add **GUI app** using Python + Qt/CustomTkinter
+- Add **auto-backup chat exporter**
+- Add **YouTube -> Telegram media tools**
+- Create **Docker support** for easy deployment
+- Add **logging + error handling features**
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+
+To contribute:
+1. Fork the repo
+2. Create a branch (`feature-new-utility`)
+3. Add your script in proper folder
+4. Submit a pull request
+
+Please follow:
+- Clean, well-commented code
+- Short README section for every new utility
+- Use a descriptive file name
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — free for personal & commercial use.
+
+---
+
+## ⭐ Show Your Support
+
+If this repo helped you:
+
+✅ Give it a **Star** on GitHub  
+✅ Share with other Telegram developers  
+✅ Contribute your own utilities!
+
+---
+
+### Made with Python by `artistofcodes`
