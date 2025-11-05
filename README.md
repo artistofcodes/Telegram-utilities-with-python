@@ -86,7 +86,7 @@ Telegram-utilities-with-python/
 | 5 | google_drive_uploader.py (coming soon) | Telethon | Auto-upload media to Google Drive |
 | 6 | spam_control_bot.py (coming soon) | Bot | Prevent spam in groups with rules |
 
-> More utilities are added frequently — stay tuned!
+> More utilities are added frequently.Stay tuned!
 
 ---
 
