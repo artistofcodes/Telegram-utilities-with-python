@@ -19,7 +19,7 @@ def delete_message(message_id):
 
 def delete_range(start_id, end_id):
     """
-    Delete a range of messages between two IDs.
+    Delete a range of messages between two IDs...
     """
     for message_id in range(start_id, end_id + 1):
         delete_message(message_id)
