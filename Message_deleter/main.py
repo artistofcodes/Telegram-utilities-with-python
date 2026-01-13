@@ -13,9 +13,9 @@ def delete_message(message_id):
     """
     try:
         bot.delete_message(chat_id=CHAT_ID, message_id=message_id)
-        print(f"✅ Deleted message ID: {message_id}")
+        print(f"Deleted message ID: {message_id}")
     except TelegramError as e:
-        print(f"❌ Error deleting message ID {message_id}: {e}")
+        print(f" Error deleting message ID {message_id}: {e}")
 
 def delete_range(start_id, end_id):
     """
